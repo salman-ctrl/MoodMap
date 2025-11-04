@@ -42,7 +42,6 @@ export function AlertDialogContent({ className, ...props }) {
         )}
         {...props}
       />
-    </AlertDialogPortal>
   );
 }
 
