@@ -86,14 +86,7 @@ export function AlertDialogDescription({ className, ...props }) {
   );
 }
 
-export function AlertDialogAction({ className, ...props }) {
-  return (
-    <AlertDialogPrimitive.Action
-      className={cn(buttonVariants(), className)}
-      {...props}
-    />
-  );
-}
+
 
 export function AlertDialogCancel({ className, ...props }) {
   return (
