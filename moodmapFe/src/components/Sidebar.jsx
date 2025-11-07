@@ -1,6 +1,5 @@
 import { Sparkles } from 'lucide-react';
 
-
 export default function Sidebar({ menuItems, currentPage, setCurrentPage, isDarkMode }) {
   return (
     <aside 
