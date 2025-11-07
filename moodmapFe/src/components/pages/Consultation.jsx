@@ -284,7 +284,10 @@ export default function Consultation() {
                 />
               </div>
 
-             
+              <button 
+                onClick={handleBooking}
+                className="w-full py-2 bg-gradient-to-r from-[#3454F5] to-[#CBA6F7] text-white rounded-xl shadow-lg hover:shadow-xl transition-all font-medium flex items-center justify-center gap-2"
+              >
                 <CheckCircle2 className="w-4 h-4" />
                 Confirm Booking
               </button>
