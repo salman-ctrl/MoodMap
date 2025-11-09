@@ -15,7 +15,7 @@ exports.getProfile = async (req, res, next) => {
 
 exports.updateProfile = async (req, res, next) => {
   try {
-    const { name, phone, photo } = req.body;
+    
     const updatedUser = await User.update(req.user.id, { name, phone, photo });
     ApiResponse.success(res, 'Profile updated successfully', updatedUser);
   } catch (error) {

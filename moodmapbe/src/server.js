@@ -56,14 +56,14 @@ app.use('/api/settings', settingRoutes);
 app.get('/health', (req, res) => {
   res.json({ status: 'OK', message: 'MoodMap API is running' });
 });
-
 // 404 handler
-app.use('*', (req, res) => {
+app.use((req, res) => {
   res.status(404).json({
     success: false,
-    message: 'Route not found'
+    message: 'Route not found',
   });
 });
+
 
 // Error handler (must be last)
 app.use(errorHandler);
